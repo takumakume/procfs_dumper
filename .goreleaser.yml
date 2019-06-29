@@ -1,0 +1,10 @@
+# This is an example goreleaser.yaml file with some sane defaults.
+# Make sure to check the documentation at http://goreleaser.com
+
+builds:
+- main: cmd/procfs_dumper/main.go
+  binary: procfs_dump
+  goos:
+    - linux
+  goarch:
+    - amd64
