@@ -34,6 +34,12 @@ root@40bb5830d366:/tmp# procfs_dump -p 1 | jq .
   :
 ```
 
+## Easy install and extract
+
+```sh
+URL=$(curl -s https://api.github.com/repos/takumakume/procfs_dumper/releases/latest | grep "browser_download_url.*gz" | cut -d '"' -f 4) && curl -L -o procfs_dumper.tar.gz $URL && tar zxvf procfs_dumper.tar.gz
+```
+
 ## Usage
 
 ### Dump a process
